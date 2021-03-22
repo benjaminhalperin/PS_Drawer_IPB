@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<TITLE>MU_PS DRAWER</TITLE>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style type="text/css">
+		
+/* ============================= Main image positioning in main screen ============================ */ 
+		#locator { 
+			position: absolute; 
+			visibility: visible; 
+			left: 40px; 
+			top: 200px; 
+			height: 823px; 
+			width: 1263px;
+			border-style: solid;
+			border-width: 5px;
+			border-color: red;  
+		}
+
+/* =========================  Tooltip in objects hover event  ===================  */
+
+/* =======  Tooltip item7 =========  */
+		.tooltipITEM7 {
+		  position: relative;
+		  left: 75px;
+		  top: -812px;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		}
+
+		.tooltipITEM7 .tooltiptext {
+		  visibility: hidden;
+		  width: 300px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%;
+		  left: 50%;
+		  margin-left: -60px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltipITEM7 .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltipITEM7:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+		
+/* =======  Tooltip item2 =========  */
+		.tooltipITEM2 {
+		  position: relative;
+		  left: 170px;
+		  top: -840px;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		}
+
+		.tooltipITEM2 .tooltiptext {
+		  visibility: hidden;
+		  width: 300px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%;
+		  left: 50%;
+		  margin-left: -60px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltipITEM2 .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltipITEM2:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+		
+/* =======  Tooltip item3 =========  */
+		.tooltipITEM3 {
+		  position: relative;
+		  left: 245px;
+		  top: -810px;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		}
+
+		.tooltipITEM3 .tooltiptext {
+		  visibility: hidden;
+		  width: 300px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%;
+		  left: 50%;
+		  margin-left: -60px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltipITEM3 .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltipITEM3:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+		
+/* =======  Tooltip item6 =========  */
+		.tooltipITEM6 {
+		  position: relative;
+		  left: 333px;
+		  top: -805px;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		}
+
+		.tooltipITEM6 .tooltiptext {
+		  visibility: hidden;
+		  width: 300px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%;
+		  left: 50%;
+		  margin-left: -60px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltipITEM6 .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltipITEM6:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+		
+/* =======  Tooltip item1 =========  */
+		.tooltipITEM1 {
+		  position: relative;
+		  left: 395px;
+		  top: -795px;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		}
+
+		.tooltipITEM1 .tooltiptext {
+		  visibility: hidden;
+		  width: 350px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%;
+		  left: 50%;
+		  margin-left: -60px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltipITEM1 .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltipITEM1:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+		
+/* =======  Tooltip item4 =========  */
+		.tooltipITEM4 {
+		  position: relative;
+		  left: 750px;
+		  top: -795px;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		}
+
+		.tooltipITEM4 .tooltiptext {
+		  visibility: hidden;
+		  width: 400px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%;
+		  left: 50%;
+		  margin-left: -60px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltipITEM4 .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltipITEM4:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+		
+/* =======  Tooltip item5 =========  */
+		.tooltipITEM5 {
+		  position: relative;
+		  left: 992px;
+		  top: -788px;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		}
+
+		.tooltipITEM5 .tooltiptext {
+		  visibility: hidden;
+		  width: 360px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%;
+		  left: 50%;
+		  margin-left: -60px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltipITEM5 .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltipITEM5:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+		
+/* =======  Tooltip item8 =========  */
+		.tooltipITEM8 {
+		  position: relative;
+		  left: 707px;
+		  top: -398px;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		}
+
+		.tooltipITEM8 .tooltiptext {
+		  visibility: hidden;
+		  width: 400px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 125%;
+		  left: 50%;
+		  margin-left: -60px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltipITEM8 .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltipITEM8:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+
+	</style>
+</head>
+
+<body style="background-color:powderblue;">
+
+<!---===============================================================================--->
+<!---===================   Text style section begins here  =========================--->
+<!---===============================================================================--->
+
+     <style type="text/css">
+      body { margin-left: 5%; margin-right: 10%; }
+      h1 { margin-left: 10%; font-size: 28; color: red; }
+      h2 { margin-left: -2%; font-size: 24; color: blue; }
+      h3 { margin-left: -2%; font-size: 20; color: teal; }
+      h4,h5,h6 { margin-left: -2%; }
+      h4 { font-style: italic; font-weight: bold; }
+     </style>
+
+	<h2><font color="red">MAIN UNIT POWER SUPPLY DRAWER</font></h2>
+    <h3>Doc ID : EM-L1100-1500</h3>
+	<br><h4>Position mouse symbol on baloon for details</h4>
+	
+	<blockquote>
+
+<!--===================================== main image pointer ================================-->
+		<div id="locator">
+			<img src="PowerSupplyDrawerMainAssembly.jpg" usemap="#PS_DrawerAssy" ><br>
+			<!---==================   Mapping hot areas on objects images for link section begins here  ==================-->
+			<map name="PS_DrawerAssy">
+
+				<!--=====================================-->
+				<div class="tooltipITEM7">
+					<area shape="circle" coords="166, 43, 10" />    
+					<span class="tooltiptext">P.N. L1100-1556-501   FRONT PANEL</span>
+				</div>
+				
+				<div class="tooltipITEM2">
+					<area shape="circle" coords="264, 17, 10" />    
+					<span class="tooltiptext">P.N. L1100-1520-501   M198 ASSY</span>
+				</div>
+				
+				<div class="tooltipITEM3">
+					<area shape="circle" coords="343, 48, 10" />    
+					<span class="tooltiptext">P.N. L1100-1530-501   PSSF E/M ASSY</span>
+				</div>
+				
+				<div class="tooltipITEM6">
+					<area shape="circle" coords="434, 53, 10" />    
+					<span class="tooltiptext">P.N. L1100-2070-600   PS BOARD</span>
+				</div>
+				
+				<div class="tooltipITEM1">
+					<area shape="circle" coords="524, 63, 10" />    
+					<span class="tooltiptext">P.N. L1100-1590-501   PS DRAWER-E/M ASSY</span>
+				</div>
+				
+				<div class="tooltipITEM4">
+					<area shape="circle" coords="912, 60, 10" />    
+					<span class="tooltiptext">P.N. L1100-1540-501   SERVO AMPLIFIER MODULE AZ</span>
+				</div>
+				
+				<div class="tooltipITEM5">
+					<area shape="circle" coords="1140, 60, 10" />    
+					<span class="tooltiptext">P.N. L1100-1550-501   BOOSTER AMPLIFIER ASSY</span>
+				</div>
+				
+				<div class="tooltipITEM8">
+					<area shape="circle" coords="873, 458, 10" />    
+					<span class="tooltiptext">P.N. L1100-1540-502   SERVO AMPLIFIER MODULE EL</span>
+				</div>
+			
+			</map>
+		   <!---==================   Mapping hot areas for link section ends here  ==================--->
+		</div>
+	</blockquote>
+</body>
+</html>
